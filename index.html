@@ -3,63 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shiksha Notes - Collaborative Learning Platform</title>
+    
+    <title>Shiksha Notes | Collaborative Learning & Study Platform</title>
+    <meta name="title" content="Shiksha Notes | Collaborative Learning & Study Platform">
+    <meta name="description" content="Join Shiksha Notes to discover, upload, and collaborate on study materials. The best collaborative learning platform for students to share notes and succeed together.">
+    <meta name="keywords" content="siksha notes, shiksha notes, study notes, collaborative learning, student notes, university notes, exam prep, free study materials">
+    <meta name="author" content="Shiksha Notes">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://www.shikshanotes.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.shikshanotes.com/">
+    <meta property="og:title" content="Shiksha Notes | Collaborative Learning Platform">
+    <meta property="og:description" content="Join Shiksha Notes to discover, upload, and collaborate on study materials. The best collaborative learning platform for students.">
+    <meta property="og:image" content="https://www.shikshanotes.com/assets/og-image.jpg"> <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.shikshanotes.com/">
+    <meta property="twitter:title" content="Shiksha Notes | Collaborative Learning Platform">
+    <meta property="twitter:description" content="Join Shiksha Notes to discover, upload, and collaborate on study materials. The best collaborative learning platform for students.">
+    <meta property="twitter:image" content="https://www.shikshanotes.com/assets/og-image.jpg">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Shiksha Notes",
+      "alternateName": "Siksha Notes",
+      "url": "https://www.shikshanotes.com/",
+      "description": "A collaborative learning platform for sharing and finding study notes.",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.shikshanotes.com/?search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <style>
         body { font-family: 'Inter', sans-serif; }
-        .glass-effect {
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-        }
-        .dark .glass-effect {
-            background: rgba(30, 41, 59, 0.95);
-            border-color: rgba(75, 85, 99, 0.4);
-        }
-        .gradient-bg {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-        .card-hover:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        .dark .card-hover:hover {
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
-        }
-        .drag-active {
-            border-color: #667eea !important;
-            background-color: #f0f4ff !important;
-        }
-        .dark .drag-active {
-            background-color: rgba(99, 102, 241, 0.2) !important;
-        }
-        .fade-in {
-            animation: fadeIn 0.3s ease-in;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .scrollbar-hide::-webkit-scrollbar {
-            display: none;
-        }
-        .scrollbar-hide {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-        /* Dark mode transitions */
-        body, .bg-white, .bg-gray-50, .bg-gray-100, .bg-gray-800 {
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
+        .glass-effect { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        .dark .glass-effect { background: rgba(30, 41, 59, 0.95); border-color: rgba(75, 85, 99, 0.4); }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+        .dark .card-hover:hover { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.3); }
+        .drag-active { border-color: #667eea !important; background-color: #f0f4ff !important; }
+        .dark .drag-active { background-color: rgba(99, 102, 241, 0.2) !important; }
+        .fade-in { animation: fadeIn 0.3s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+        body, .bg-white, .bg-gray-50, .bg-gray-100, .bg-gray-800 { transition: background-color 0.3s ease, color 0.3s ease; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
 
-    <!-- Auth Modal -->
+    <noscript>
+        <div style="padding: 2rem; text-align: center;">
+            <h1>Shiksha Notes</h1>
+            <p>Welcome to Shiksha Notes (Siksha Notes), the premier collaborative learning platform. Please enable JavaScript to log in, search, and upload study materials, notes, and academic resources.</p>
+        </div>
+    </noscript>
+
     <div id="authModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm">
         <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl w-full max-w-md p-8 m-4 transform transition-all">
             <div class="text-center mb-8">
@@ -73,12 +82,12 @@
             <div id="loginForm">
                 <div class="space-y-4">
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
+                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="loginEmail">Email</label>
                         <input type="email" id="loginEmail" placeholder="student@university.edu" 
                             class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all">
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Password</label>
+                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="loginPassword">Password</label>
                         <input type="password" id="loginPassword" placeholder="••••••••" 
                             class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all">
                     </div>
@@ -96,17 +105,17 @@
             <div id="signupForm" class="hidden">
                 <div class="space-y-4">
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Full Name</label>
+                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="signupName">Full Name</label>
                         <input type="text" id="signupName" placeholder="John Doe" 
                             class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all">
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Email</label>
+                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="signupEmail">Email</label>
                         <input type="email" id="signupEmail" placeholder="student@university.edu" 
                             class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all">
                     </div>
                     <div>
-                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Password</label>
+                        <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="signupPassword">Password</label>
                         <input type="password" id="signupPassword" placeholder="••••••••" 
                             class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all">
                     </div>
@@ -123,9 +132,7 @@
         </div>
     </div>
 
-    <!-- Main App (Hidden initially) -->
     <div id="mainApp" class="hidden min-h-screen flex flex-col">
-        <!-- Navigation -->
         <nav class="glass-effect sticky top-0 z-40 border-b border-gray-200 dark:border-gray-700">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between h-16">
@@ -141,7 +148,7 @@
                     <div class="flex items-center space-x-4">
                         <div class="hidden md:flex items-center bg-gray-100 dark:bg-gray-700 rounded-full px-4 py-2">
                             <i data-lucide="search" class="w-4 h-4 text-gray-400 mr-2"></i>
-                            <input type="text" id="searchInput" placeholder="Search notes..." 
+                            <input type="text" id="searchInput" aria-label="Search notes" placeholder="Search notes..." 
                                 class="bg-transparent border-none outline-none text-sm w-64 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"
                                 onkeyup="handleSearch()">
                         </div>
@@ -153,11 +160,11 @@
                         </button>
 
                         <div class="flex items-center space-x-3">
-                            <button onclick="toggleDarkMode()" class="relative p-2 text-gray-600 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700 rounded-full transition-colors" id="darkModeToggle" title="Toggle Dark Mode">
+                            <button onclick="toggleDarkMode()" class="relative p-2 text-gray-600 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700 rounded-full transition-colors" id="darkModeToggle" title="Toggle Dark Mode" aria-label="Toggle Dark Mode">
                                 <i data-lucide="moon" class="w-5 h-5 hidden dark:block"></i>
                                 <i data-lucide="sun" class="w-5 h-5 block dark:hidden"></i>
                             </button>
-                            <button class="relative p-2 text-gray-600 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700 rounded-full transition-colors">
+                            <button class="relative p-2 text-gray-600 hover:bg-gray-100 dark:text-gray-300 dark:hover:bg-gray-700 rounded-full transition-colors" aria-label="Notifications">
                                 <i data-lucide="bell" class="w-5 h-5"></i>
                                 <span class="absolute top-1 right-1 w-2 h-2 bg-red-500 rounded-full"></span>
                             </button>
@@ -174,9 +181,7 @@
             </div>
         </nav>
 
-        <!-- Main Content -->
         <div class="flex flex-1 overflow-hidden">
-            <!-- Sidebar -->
             <aside class="hidden md:flex w-64 bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 flex-col">
                 <div class="p-6">
                     <div class="space-y-1">
@@ -202,8 +207,7 @@
                     <div class="mt-8">
                         <h3 class="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-wider mb-4">Subjects</h3>
                         <div class="space-y-1" id="subjectList">
-                            <!-- Populated by JS -->
-                        </div>
+                            </div>
                     </div>
                 </div>
 
@@ -218,9 +222,7 @@
                 </div>
             </aside>
 
-            <!-- Content Area -->
             <main class="flex-1 overflow-y-auto bg-gray-50 dark:bg-gray-900 p-4 md:p-8">
-                <!-- Stats Cards -->
                 <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
                     <div class="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm border border-gray-100 dark:border-gray-700">
                         <div class="flex items-center justify-between">
@@ -268,30 +270,26 @@
                     </div>
                 </div>
 
-                <!-- Section Header -->
                 <div class="flex items-center justify-between mb-6">
                     <div>
                         <h1 class="text-2xl font-bold text-gray-900 dark:text-white" id="sectionTitle">Recent Uploads</h1>
                         <p class="text-gray-500 dark:text-gray-400 mt-1" id="sectionSubtitle">Discover the latest notes from your classmates</p>
                     </div>
                     <div class="flex items-center space-x-2">
-                        <select id="sortSelect" onchange="sortNotes()" class="px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white rounded-lg text-sm focus:ring-2 focus:ring-indigo-500 outline-none">
+                        <select id="sortSelect" onchange="sortNotes()" aria-label="Sort notes" class="px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white rounded-lg text-sm focus:ring-2 focus:ring-indigo-500 outline-none">
                             <option value="newest">Newest First</option>
                             <option value="popular">Most Popular</option>
                             <option value="name">Name A-Z</option>
                         </select>
-                        <button onclick="openUploadModal()" class="md:hidden bg-indigo-600 text-white p-2 rounded-lg">
+                        <button onclick="openUploadModal()" class="md:hidden bg-indigo-600 text-white p-2 rounded-lg" aria-label="Upload note">
                             <i data-lucide="plus" class="w-5 h-5"></i>
                         </button>
                     </div>
                 </div>
 
-                <!-- Notes Grid -->
                 <div id="notesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Populated by JS -->
-                </div>
+                    </div>
 
-                <!-- Empty State -->
                 <div id="emptyState" class="hidden text-center py-12">
                     <div class="w-24 h-24 bg-gray-100 dark:bg-gray-800 rounded-full flex items-center justify-center mx-auto mb-4">
                         <i data-lucide="search" class="w-10 h-10 text-gray-400"></i>
@@ -303,25 +301,24 @@
         </div>
     </div>
 
-    <!-- Upload Modal -->
     <div id="uploadModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm p-4">
         <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl w-full max-w-lg max-h-[90vh] overflow-y-auto">
             <div class="p-6 border-b border-gray-200 dark:border-gray-700 flex items-center justify-between">
                 <h2 class="text-xl font-bold text-gray-900 dark:text-white">Upload Notes</h2>
-                <button onclick="closeUploadModal()" class="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full transition-colors">
+                <button onclick="closeUploadModal()" class="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full transition-colors" aria-label="Close modal">
                     <i data-lucide="x" class="w-5 h-5 text-gray-500"></i>
                 </button>
             </div>
             
             <div class="p-6 space-y-4">
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Title</label>
+                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="uploadTitle">Title</label>
                     <input type="text" id="uploadTitle" placeholder="e.g., Calculus II - Integration Methods" 
                         class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none">
                 </div>
                 
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Subject</label>
+                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="uploadSubject">Subject</label>
                     <select id="uploadSubject" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none">
                         <option value="Mathematics">Mathematics</option>
                         <option value="Physics">Physics</option>
@@ -335,7 +332,7 @@
                 </div>
 
                 <div>
-                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Description</label>
+                    <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1" for="uploadDescription">Description</label>
                     <textarea id="uploadDescription" rows="3" placeholder="Brief description of the content..." 
                         class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white rounded-lg focus:ring-2 focus:ring-indigo-500 outline-none resize-none"></textarea>
                 </div>
@@ -366,7 +363,6 @@
         </div>
     </div>
 
-    <!-- Toast Notification -->
     <div id="toast" class="hidden fixed bottom-4 right-4 bg-gray-900 text-white px-6 py-3 rounded-lg shadow-lg transform transition-all duration-300 translate-y-20 z-50 flex items-center space-x-3">
         <i data-lucide="check-circle" class="w-5 h-5 text-green-400"></i>
         <span id="toastMessage">Operation successful</span>
@@ -390,7 +386,6 @@
             lucide.createIcons();
         }
 
-        // Initialize dark mode on load
         initDarkMode();
 
         // State Management
@@ -553,7 +548,7 @@
             grid.innerHTML = notesToRender.map(note => `
                 <div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden card-hover fade-in group">
                     <div class="relative h-40 overflow-hidden">
-                        <img src="${note.thumbnail}" alt="${note.title}" class="w-full h-full object-cover">
+                        <img src="${note.thumbnail}" alt="${note.title} preview" class="w-full h-full object-cover">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-between p-4">
                             <span class="text-white text-sm font-medium">${note.type.toUpperCase()}</span>
                             ${note.incomplete ? '<span class="bg-orange-500 text-white text-xs px-2 py-1 rounded-full">Needs Help</span>' : ''}
@@ -569,11 +564,11 @@
                         
                         <div class="flex items-center justify-between pt-4 border-t border-gray-100 dark:border-gray-700">
                             <div class="flex items-center space-x-3 text-sm text-gray-500 dark:text-gray-400">
-                                <span class="flex items-center space-x-1">
+                                <span class="flex items-center space-x-1" title="Downloads">
                                     <i data-lucide="download" class="w-4 h-4"></i>
                                     <span>${note.downloads}</span>
                                 </span>
-                                <span class="flex items-center space-x-1">
+                                <span class="flex items-center space-x-1" title="Likes">
                                     <i data-lucide="heart" class="w-4 h-4"></i>
                                     <span>${note.likes}</span>
                                 </span>
@@ -610,7 +605,6 @@
         function filterNotes(type) {
             currentFilter = type;
             
-            // Update active nav
             document.querySelectorAll('aside button').forEach(btn => {
                 btn.classList.remove('bg-indigo-50', 'text-indigo-700');
                 btn.classList.add('text-gray-600');
@@ -756,7 +750,6 @@
             showToast('Note uploaded successfully!');
         }
 
-        // Actions
         function downloadNote(id) {
             const note = notes.find(n => n.id === id);
             if (note) {
@@ -804,17 +797,15 @@
         }
 
         function toggleProfileMenu() {
-            // Simple toggle for demo
             if (confirm('Logout?')) {
                 location.reload();
             }
         }
 
-        // Mobile responsive search toggle
         if (window.innerWidth < 768) {
             document.getElementById('searchInput').parentElement.classList.add('hidden');
         }
     </script>
-<script src="https://deepsite.hf.co/deepsite-badge.js"></script>
+    <script src="https://deepsite.hf.co/deepsite-badge.js"></script>
 </body>
 </html>
